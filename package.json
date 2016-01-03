@@ -1,9 +1,9 @@
 {
-  "name": "timepill",
+  "name": "timeshell",
   "version": "0.0.0",
-  "description": "My astounding module",
+  "description": "Backup and Sync all your node modules which are installed globally",
   "license": "MIT",
-  "repository": "egoist/timepill",
+  "repository": "egoist/timeshell",
   "author": {
     "name": "",
     "email": "",

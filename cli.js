@@ -1,22 +1,22 @@
 #!/usr/bin/env node
 'use strict'
 
-const timepill = require('commander')
+const cli = require('commander')
 const pkg = require('./package')
 // commands
 const config = require('./commands/config')
 const push = require('./commands/push')
 
-timepill
+cli
 	.version(pkg.version)
 	.usage('[command] <options ...>')
 	
-timepill
+cli
 	.command('config')
 	.action(config)
 	
-timepill
+cli
 	.command('push')
 	.action(push)
 	
-timepill.parse(process.argv)
+cli.parse(process.argv)

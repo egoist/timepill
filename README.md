@@ -1,17 +1,17 @@
-# timepill 
+# timeshell
 
 > Backup and Sync all your node modules which are installed globally
 
 ## CLI
 
 ```
-$ npm install --global timepill
+$ npm install --global timeshell
 ```
 
 Usage:
 
 ```
-$ timepill --help
+$ timeshell --help
 ```
 
 ## License
