@@ -1,4 +1,4 @@
-# timepill [![Build Status](https://travis-ci.org/egoist/timepill.svg?branch=master)](https://travis-ci.org/egoist/timepill)
+# timepill 
 
 > Backup and Sync all your node modules which are installed globally
 
