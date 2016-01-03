@@ -1,0 +1,38 @@
+{
+  "name": "timepill",
+  "version": "0.0.0",
+  "description": "My astounding module",
+  "license": "MIT",
+  "repository": "egoist/timepill",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "github.com/egoist"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "echo lol"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "commands",
+    "lib"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "npm"
+  ],
+  "dependencies": {
+    "commander": "^2.9.0",
+    "configstore": "^1.4.0",
+    "inquirer": "^0.11.1",
+    "path-exists": "^2.1.0",
+    "shelljs": "^0.5.3",
+    "user-home": "^2.0.0"
+  }
+}
