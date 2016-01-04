@@ -4,7 +4,7 @@ require('shelljs/global')
 const fs = require('fs')
 const path = require('path')
 const pathExists = require('path-exists')
-const home = require('user-home')
+const localDir = require('../lib/getLocalDir')
 const store = require('../lib/store')
 const config = store.all
 
@@ -15,12 +15,10 @@ module.exports = function () {
 	let names = fs.readdirSync(dir)
 	names = JSON.stringify(names, null, 2)
 	
-	const localGitDir = home + '/.timepill'
-	
-	if (pathExists.sync(localGitDir)) {
+	if (pathExists.sync(localDir)) {
 		push()
 	} else {
-		mkdir('-p', localGitDir)
+		mkdir('-p', localDir)
 		cd(localGitDir)
 		exec('git init')
 		exec(`git remote add origin ${config.url}`)

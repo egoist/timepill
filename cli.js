@@ -6,6 +6,8 @@ const pkg = require('./package')
 // commands
 const config = require('./commands/config')
 const push = require('./commands/push')
+const pull = require('./commands/pull')
+const sync = require('./commands/sync')
 
 cli
 	.version(pkg.version)
@@ -18,5 +20,13 @@ cli
 cli
 	.command('push')
 	.action(push)
+
+cli
+	.command('pull')
+	.action(pull)
+	
+cli
+	.command('sync')
+	.action(sync)
 	
 cli.parse(process.argv)
